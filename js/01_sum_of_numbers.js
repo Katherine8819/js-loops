@@ -1,14 +1,14 @@
 (function () {
   "use strict";
 
-  let number = prompt("Укажите любо число, чтобы узнать сумму чисел в диапазоне");
+  let minNumber = Number(prompt("Укажите число нижнего диапазона"));
+  let maxNumber = Number(prompt("Укажите число верхнего диапазона"));
   let sum = 0;
 
-  for (let i = 1; i <= number; i++) {
+  for (let i = minNumber; i <= maxNumber; i++) {
     sum += i;
-
   };
-  alert("Сумма чисел в диапазоне от 1 до " + number + " равняется " + sum);
+  alert(`Сумма чисел в диапазоне от ${minNumber} до ${maxNumber}: ${sum}`);
 })();
 
 // Подсчитать сумму всех чисел в заданном пользователем диапазоне.

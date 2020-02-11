@@ -5,7 +5,7 @@
     let mover = prompt("На сколько цифр хотите сдвинуть число?")
 
 
-    console.log(number.substring(mover) + number.substring(0, mover));
+    alert(number.substring(mover) + number.substring(0, mover));
 
 })()
 
